@@ -11,8 +11,10 @@ import com.ua.cabare.User;
 import com.ua.cabare.UserRepository;
 
 @Controller
-@RequestMapping(path="/demo")
+@RequestMapping(path="/")
 public class MainController {
+
+
     @Autowired
     private UserRepository userRepository;
 
@@ -30,5 +32,10 @@ public class MainController {
     @GetMapping(path="/all")
     public @ResponseBody Iterable<User> getAllUsers() {
         return userRepository.findAll();
+    }
+
+    @GetMapping(path = "/get")
+    public @ResponseBody User getOneUser(Long id){
+        return userRepository.findOne(id);
     }
 }
