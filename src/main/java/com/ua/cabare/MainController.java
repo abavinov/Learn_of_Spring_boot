@@ -11,7 +11,7 @@ import com.ua.cabare.User;
 import com.ua.cabare.UserRepository;
 
 @Controller
-@RequestMapping(path="/main")
+@RequestMapping(path="/demo")
 public class MainController {
     @Autowired
     private UserRepository userRepository;
