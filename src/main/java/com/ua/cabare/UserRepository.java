@@ -2,8 +2,8 @@ package com.ua.cabare;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.ua.cabare.User;
+import com.ua.cabare.Dish;
 
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<Dish, Long> {
 
 }
